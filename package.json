@@ -1,27 +1,22 @@
 {
-  "name": "apiai-middleware",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "worker": "app.js",
-  "scripts": {
-	"start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "apiai": "^4.0.3",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2"
-  },
-  "dependencies": {
+	  "name": "jmgchatbot",
+	  "version": "0.0.0",
+	  "description": "Heroku Connect Sample App - Phone Change",
+	  "main": "app.js",
+	  "scripts": {
+	    "start": "node app.js"
+	  },
+	  "dependencies": {
 	    "express": "^4.13.1",
 	    "body-parser": "^1.13.2",
 	    "pg": "^4.4.0"
 	  },
-"engines": {
+	  "dependencies": {
+		    "apiai": "^4.0.3",
+		    "body-parser": "^1.18.2",
+		    "express": "^4.16.2"
+		  },
+	  "engines": {
 	    "node": "0.12.7"
 	  }
-  "author": "",
-  "license": "ISC"
-}
-
+	}
