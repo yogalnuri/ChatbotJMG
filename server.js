@@ -3,6 +3,8 @@ var bodyParser = require('body-parser');
 var pg = require('pg');
 
 var app = express();
+var apiai = require('apiai');
+var apiapp = apiai("6b53faafccee40c881ee6058f8cee748");
 
 app.set('port', process.env.PORT || 5000);
 
