@@ -2,7 +2,7 @@
   "name": "Phone Change",
   "description": "Heroku Connect Sample App - Phone Change",
   "repository": "https://github.com/yogalnuri/ChatbotJMG",
-  "success_url": "index.html",
+  "success_url": "/public/index.html",
   "env": {
     "PGSSLMODE": {
       "description": "Require SSL for Postgres",
