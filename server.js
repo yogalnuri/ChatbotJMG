@@ -48,8 +48,8 @@ app.post("/chatbotJoin", function(req, res){
         sessionId: '123123'
     });
     request.on('response', function(response) {
-        console.log(response.result);
-        //$("#idRespuesta").value=response.result.metadata.fullfillment.speech;
+        console.log(response.result.fulfillment.speech);
+        $("#idRespuesta").value=response.result.fulfillment.speech;
         res.send(response);
     });
     request.on('error', function(error) {
