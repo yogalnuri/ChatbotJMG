@@ -4,7 +4,7 @@ var pg = require('pg');
 
 var app = express();
 var apiai = require('apiai');
-var apiapp = apiai("6b53faafccee40c881ee6058f8cee748");
+var apiapp = apiai("d2aa27c7939543549982acb558ef8796");
 
 app.set('port', process.env.PORT || 5000);
 
