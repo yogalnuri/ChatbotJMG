@@ -42,7 +42,22 @@ app.post('/update', function(req, res) {
         );
     });
 });
+app.post("/chatbotJoin", function(req, res){
+    console.log(req.body.chatText);
+    var request = apiapp.textRequest(req.body.chatText, {
+        sessionId: '123123'
+    });
+    request.on('response', function(response) {
+        console.log(response);
+        res.send(response);
+    });
+    request.on('error', function(error) {
+        console.log(error);
+        res.send(error);
+    });
+    request.end();
 
+});
 app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });

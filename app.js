@@ -107,7 +107,7 @@ app.use(bodyParser.json());
         );
     });
 });*/
-app.post('/chatConnect', function(req,res))
+app.post('/chatConnect', function(req,res){});
 app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
