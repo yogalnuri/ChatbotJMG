@@ -42,6 +42,8 @@
                         success: function(data) {
                             debugger;
                             $("#firstName").val("");
+                            $("#idRespuesta").val(data.result.fulfillment.speech)
+
                         },
                         error: function(err) {
                             errorMessage.text(err.responseJSON.error);
@@ -76,7 +78,7 @@
                     </div>
                     <div class="form-group">
                         <label for="firstName">Respuestas</label>
-                        <input type="text" class="form-control" id="idRespuesta" placeholder="Respuesta" required>
+                        <input type="text" class="form-control" id="idRespuesta" placeholder="Respuesta">
                     </div>
                 </div>
                 <div class="panel-footer">
