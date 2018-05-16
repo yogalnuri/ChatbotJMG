@@ -49,7 +49,6 @@ app.post("/chatbotJoin", function(req, res){
     });
     request.on('response', function(response) {
         console.log(response.result.fulfillment.speech);
-        alert(response.result.fulfillment.speech);
         res.send(response);
     });
     request.on('error', function(error) {
