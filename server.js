@@ -43,7 +43,7 @@ app.post('/update', function(req, res) {
     });
 });
 app.post("/chatbotJoin", function(req, res){
-    console.log("My request-->"+req);
+    console.log("My request-->"+req.body.firstName);
     var request = apiapp.textRequest(req.body.chatText, {
         sessionId: '123123'
     });
