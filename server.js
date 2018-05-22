@@ -49,6 +49,7 @@ app.post("/chatbotJoin", function(req, res){
         sessionId: '123123'
     });
     request.on('response', function(response) {
+        console.log(response);
         res.send(response);
     });
     request.on('error', function(error) {
