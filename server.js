@@ -48,6 +48,7 @@ app.post("/chatbotJoin", function(req, res){
     var request = apiapp.textRequest(req.body.firstName, {
         sessionId: '123123'
     });
+    console.log('Request send-->'+request);
     request.on('response', function(response) {
         console.log(response);
         res.send(response);
