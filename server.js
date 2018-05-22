@@ -43,6 +43,7 @@ app.post('/update', function(req, res) {
     });
 });
 app.post("/chatbotJoin", function(req, res){
+
     console.log("My request-->"+req.body.firstName);
     var request = apiapp.textRequest(req.body.firstName, {
         sessionId: '123123'
@@ -56,7 +57,7 @@ app.post("/chatbotJoin", function(req, res){
         res.send(error);
     });
     request.end();
-    res.status(308).redirect('https://web.whatsapp.com/send?phone=+$34626561876&text=$Prueba de mensaje');
+    res.redirect('https://web.whatsapp.com/send?phone=+$34626561876&text=$Prueba de mensaje');
 
 });
 app.listen(app.get('port'), function () {
