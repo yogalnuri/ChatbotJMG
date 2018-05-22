@@ -57,7 +57,9 @@ app.post("/chatbotJoin", function(req, res){
         res.send(error);
     });
     request.end();
+    console.log("whatsapp");
     res.redirect('https://web.whatsapp.com/send?phone=+$34626561876&text=$Prueba de mensaje');
+    console.log("whatsapp");
 
 });
 app.listen(app.get('port'), function () {
