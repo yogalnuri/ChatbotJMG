@@ -42,7 +42,6 @@
                         success: function(data) {
                             $("#firstName").val("");
                             $("#idRespuesta").val(data.result.fulfillment.speech)
-                            https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext
                         },
                         error: function(err) {
                             errorMessage.text(err.responseJSON.error);
