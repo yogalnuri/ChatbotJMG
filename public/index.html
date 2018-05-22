@@ -42,7 +42,7 @@
                         success: function(data) {
                             $("#firstName").val("");
                             $("#idRespuesta").val(data.result.fulfillment.speech)
-
+                            https://api.whatsapp.com/send?phone=whatsappphonenumber&text=urlencodedtext
                         },
                         error: function(err) {
                             errorMessage.text(err.responseJSON.error);
@@ -53,6 +53,13 @@
             });
         });
 
+    </script>
+    <script>
+        function ok(){
+            var txt=document.getElementsByTagName("textarea")[0]
+            var a=document.getElementsByTagName("a")[0]
+            a.href="https://api.whatsapp.com/send?text="+encodeURIComponent(txt.value)
+        }
     </script>
 </head>
 <body>
@@ -94,6 +101,9 @@
                 </div>
             </div>
         </form>
+        <p align="center"><img id="i1"src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c543.png"><br>Send text directly to WhatAapp</p>
+        <textarea placeholder="Send text directly to WhatsApp"></textarea>
+        <a><button onclick="ok()"><img id ="i2"src="https://image.flaticon.com/icons/png/512/60/60525.png"></button></a>
     </div>
 </body>
 </html>
